@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "commitizen": "^4.2.4"
+  },
+  "scripts": {
+    "commit": "cz"
+  }
+}
