@@ -93,8 +93,8 @@ select {
 }
 :root,
 [data-theme=default] {
-  --clr-background: hsl(360, 80%, 70%);
-  --clr-header: hsl(0, 85%, 60%);
+  --clr-background: hsl(40, 40%, 85%);
+  --clr-header: hsl(40, 40%, 90%);
   --clr-contrast-lower: hsl(0, 0%, 90%);
   --clr-contrast-low: hsl(240, 0%, 80%);
   --clr-contrast-medium: hsl(240, 0%, 50%);
@@ -108,8 +108,8 @@ select {
 }
 
 [data-theme=dark] {
-  --clr-background: hsl(360, 80%, 70%);
-  --clr-header: hsl(0, 85%, 60%);
+  --clr-background: hsl(40, 40%, 90%);
+  --clr-header: hsl(40, 40%, 85%);
   --clr-contrast-lower: hsl(240, 0%, 10%);
   --clr-contrast-low: hsl(252, 0%, 25%);
   --clr-contrast-medium: hsl(240, 0%, 55%);
@@ -133,12 +133,12 @@ select {
 }
 
 h1, h2, h3, h4 {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--ff-dm-serif-display);
   font-weight: 700;
 }
 
 p {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--ff-manuale);
 }
 
 h1 {
@@ -173,7 +173,11 @@ header {
   flex-direction: column;
 }
 header h1 {
-  text-shadow: 0.025em 0.025em 0 yellow, 0.05em 0.05em 0 blue, 0.075em 0.075em 0 red, 0.1em 0.1em 0 black;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.025em 0.025em 0 #ffbf00, 0.04em 0.04em 0 #ffaa00, 0.06em 0.06em 0 #ff8000, 0.08em 0.08em 0 #ff4000;
+}
+header p {
+  font-weight: var(--fw-medium);
 }
 
 /* 

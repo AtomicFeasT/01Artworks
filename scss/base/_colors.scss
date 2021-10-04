@@ -1,8 +1,8 @@
 :root, 
 [data-theme="default"] {
     // * Default Color Scheme
-    --clr-background: hsl(360, 80%, 70%);
-    --clr-header: hsl(0, 85%, 60%);
+    --clr-background: hsl(40, 40%, 85%);
+    --clr-header: hsl(40, 40%, 90%);
 
     // * Contrasts
     --clr-contrast-lower: hsl(0, 0%, 90%);
@@ -19,8 +19,8 @@
 
 [data-theme="dark"] {
      // * Default Color Scheme
-     --clr-background: hsl(360, 80%, 70%);
-     --clr-header: hsl(0, 85%, 60%);
+     --clr-background: hsl(40, 40%, 90%);
+     --clr-header: hsl(40, 40%, 85%);
     
     //  *Constrasts
     --clr-contrast-lower: hsl(240, 0%, 10%);

@@ -8,12 +8,14 @@
     // * Font Families
     --ff-dm-serif-display: 'DM Serif Display', serif;
     --ff-manuale: 'Manuale', serif;
+
     // * Font Weights
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-semibold: 600;
     --fw-bold: 700;
+
     // * Clamps
     --fs-h1: clamp(3rem, 2.9000rem + 0.5000vw, 3.5rem);
     --fs-h2: clamp(2.5rem, 2.4250rem + 0.3750vw, 2.875rem);
@@ -23,11 +25,11 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--ff-dm-serif-display);
     font-weight: 700;
 }
 p {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--ff-manuale);
 }
 
 h1 {
