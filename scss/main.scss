@@ -1,4 +1,5 @@
 @use '../scss/base/' as *;
+@use '../scss/components/' as *;
 
 body { 
     background: var(--clr-background);
