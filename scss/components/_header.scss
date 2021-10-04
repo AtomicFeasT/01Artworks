@@ -1,9 +1,18 @@
 header { 
-    height: 50vh;
-
-    background: rgba(239, 68, 68);
-
+    height: 35vh;
+    
+    background: var(--clr-header);
+    
     display: flex;
     justify-content: center;
     align-items: center; 
+    flex-direction: column;
+    
+    h1 {
+        text-shadow: 
+        0.025em 0.025em 0 yellow,
+        0.05em 0.05em 0 blue,
+        0.075em 0.075em 0 red,
+        0.1em 0.1em 0 black;
+    }
 }

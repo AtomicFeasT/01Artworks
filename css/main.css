@@ -94,7 +94,8 @@ select {
 :root,
 [data-theme=default] {
   --clr-background: hsl(360, 80%, 70%);
-  --clr-contrast-lower: hsl(0, 0%, 100%);
+  --clr-header: hsl(0, 85%, 60%);
+  --clr-contrast-lower: hsl(0, 0%, 90%);
   --clr-contrast-low: hsl(240, 0%, 80%);
   --clr-contrast-medium: hsl(240, 0%, 50%);
   --clr-contrast-high: hsl(240, 0%, 20%);
@@ -107,25 +108,72 @@ select {
 }
 
 [data-theme=dark] {
-  --clr-primary: red;
-  /* clr contrasts */
-  --clr-bg: black;
-  --clr-contrast-lower: hsl(240, 6%, 15%);
-  --clr-contrast-low: hsl(252, 4%, 25%);
-  --clr-contrast-medium: hsl(240, 1%, 57%);
-  --clr-contrast-high: hsl(0, 0%, 89%);
-  --clr-contrast-higher: white;
+  --clr-background: hsl(360, 80%, 70%);
+  --clr-header: hsl(0, 85%, 60%);
+  --clr-contrast-lower: hsl(240, 0%, 10%);
+  --clr-contrast-low: hsl(252, 0%, 25%);
+  --clr-contrast-medium: hsl(240, 0%, 55%);
+  --clr-contrast-high: hsl(0, 0%, 90%);
+  --clr-contrast-higher: hsl(0, 0%, 100%);
+}
+
+:root {
+  --ff-dm-serif-display: "DM Serif Display", serif;
+  --ff-manuale: "Manuale", serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fs-h1: clamp(3rem, 2.9000rem + 0.5000vw, 3.5rem);
+  --fs-h2: clamp(2.5rem, 2.4250rem + 0.3750vw, 2.875rem);
+  --fs-h3: clamp(2rem, 1.9000rem + 0.5000vw, 2.5rem);
+  --fs-h4: clamp(1.5rem, 1.3500rem + 0.7500vw, 2.25rem);
+  --paragraph: clamp(0.9rem, 0.8300rem + 0.3500vw, 1.25rem);
+}
+
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "DM Serif Display", serif;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+p {
+  font-size: var(--paragraph);
 }
 
 /* 
 * Use All (Imports) Files Base To Here
 */
 header {
-  height: 50vh;
-  background: #ef4444;
+  height: 35vh;
+  background: var(--clr-header);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  text-shadow: 0.025em 0.025em 0 yellow, 0.05em 0.05em 0 blue, 0.075em 0.075em 0 red, 0.1em 0.1em 0 black;
 }
 
 /* 
