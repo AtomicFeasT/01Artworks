@@ -1,8 +1,11 @@
+@use '../scss/base';
+// @import '../scss/base/_colors.scss';
+
 body { 
-    background: black;
+    background-color: base.$red;
 
     
     h1 { 
-        color: white;
+        color: black;
         }
 }

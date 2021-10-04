@@ -1,0 +1,31 @@
+$red: red;
+
+:root, 
+[data-theme="default"] {
+    --clr-primary: blue;
+    /* clr Contrasts */
+    --clr-bg: white;
+    --clr-contrast-lower: hsl(0, 0%, 95%);
+    --clr-contrast-low: hsl(240, 1%, 83%);
+    --clr-contrast-medium: hsl(240, 1%, 48%);
+    --clr-contrast-high: hsl(240, 4%, 20%);
+    --clr-contrast-higher: black;
+
+    --red: red;
+}
+
+[data-theme] {
+    background-clr: var(--clr-bg);
+    clr: var(--clr-contrast-high);
+}
+
+[data-theme="dark"] {
+    --clr-primary: red;
+    /* clr contrasts */
+    --clr-bg: black;
+    --clr-contrast-lower: hsl(240, 6%, 15%);
+    --clr-contrast-low: hsl(252, 4%, 25%);
+    --clr-contrast-medium: hsl(240, 1%, 57%);
+    --clr-contrast-high: hsl(0, 0%, 89%);
+    --clr-contrast-higher: white;
+}
