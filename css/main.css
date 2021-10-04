@@ -1,8 +1,133 @@
-@use '../scss/base';
-body {
-  background-color: var(--red);
+/* 
+* Box Sizing Rules 
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* 
+* Remove Default Margins 
+*/
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* 
+* Remove List Styles On Ul, Ol Elements With A List Role, Default Styling Will Be Removed 
+*/
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* 
+* Set Core Root Defaults 
+*/
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* 
+* Set Core Body Defaults 
+*/
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 
+* A Elements That Don't Have A Class Get Default Styles 
+*/
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/*
+* Make Images Easier To Work With 
+*/
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 
+* Inherit Fonts For Inputs And Buttons 
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 
+* Remove All Animations, Transitions And Smooth Scroll For People That Prefer Not To See Them 
+*/
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root,
+[data-theme=default] {
+  --clr-primary: blue;
+  /* clr Contrasts */
+  --clr-background: hsl(40, 38%, 92%);
+  --clr-contrast-lower: hsl(0, 0%, 95%);
+  --clr-contrast-low: hsl(240, 1%, 83%);
+  --clr-contrast-medium: hsl(240, 1%, 48%);
+  --clr-contrast-high: hsl(240, 4%, 20%);
+  --clr-contrast-higher: black;
+  --red: red;
+}
+
+[data-theme] {
+  background-clr: var(--clr-bg);
+  clr: var(--clr-contrast-high);
+}
+
+[data-theme=dark] {
+  --clr-primary: red;
+  /* clr contrasts */
+  --clr-bg: black;
+  --clr-contrast-lower: hsl(240, 6%, 15%);
+  --clr-contrast-low: hsl(252, 4%, 25%);
+  --clr-contrast-medium: hsl(240, 1%, 57%);
+  --clr-contrast-high: hsl(0, 0%, 89%);
+  --clr-contrast-higher: white;
+}
+
+/* 
+* Use All (Imports) Files Base To Here
+*/
+body {
+  background: var(--clr-background);
+}
 body h1 {
   color: black;
 }
+
+/*# sourceMappingURL=main.css.map */

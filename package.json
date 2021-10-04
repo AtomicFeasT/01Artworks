@@ -1,21 +1,21 @@
 {
-  "scripts": {
-    "commit": "cz"
-  },
-  "devDependencies": {
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "3.3.0",
-    "sass": "^1.42.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "name": "01-artworks",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/AtomicFeasT/01-artworks.git",
-  "author": "Thiago Lisboa <atomic-feast@hotmail.com>",
-  "license": "MIT"
+    "scripts": {
+        "commit": "cz"
+    },
+    "devDependencies": {
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "3.3.0",
+        "sass": "^1.42.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "name": "01-artworks",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/AtomicFeasT/01-artworks.git",
+    "author": "Thiago Lisboa <atomic-feast@hotmail.com>",
+    "license": "MIT"
 }

@@ -1,10 +1,8 @@
-$red: red;
-
 :root, 
 [data-theme="default"] {
     --clr-primary: blue;
     /* clr Contrasts */
-    --clr-bg: white;
+    --clr-background: hsl(40, 38%, 92%);
     --clr-contrast-lower: hsl(0, 0%, 95%);
     --clr-contrast-low: hsl(240, 1%, 83%);
     --clr-contrast-medium: hsl(240, 1%, 48%);

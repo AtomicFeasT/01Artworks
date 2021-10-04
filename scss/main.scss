@@ -1,11 +1,10 @@
-@use '../scss/base';
-// @import '../scss/base/_colors.scss';
+@use '../scss/base/' as *;
 
 body { 
-    background-color: base.$red;
+    background: var(--clr-background);
 
-    
     h1 { 
         color: black;
-        }
-}
+    }
+}   
+
