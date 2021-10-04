@@ -93,19 +93,17 @@ select {
 }
 :root,
 [data-theme=default] {
-  --clr-primary: blue;
-  /* clr Contrasts */
   --clr-background: hsl(360, 80%, 70%);
-  --clr-contrast-lower: hsl(0, 0%, 95%);
-  --clr-contrast-low: hsl(240, 1%, 83%);
-  --clr-contrast-medium: hsl(240, 1%, 48%);
-  --clr-contrast-high: hsl(240, 4%, 20%);
-  --clr-contrast-higher: black;
+  --clr-contrast-lower: hsl(0, 0%, 100%);
+  --clr-contrast-low: hsl(240, 0%, 80%);
+  --clr-contrast-medium: hsl(240, 0%, 50%);
+  --clr-contrast-high: hsl(240, 0%, 20%);
+  --clr-contrast-higher: hsl(0, 0%, 0%);
 }
 
 [data-theme] {
-  background-clr: var(--clr-bg);
-  clr: var(--clr-contrast-high);
+  --background-clr: var(--clr-background);
+  --clr: var(--clr-contrast-higher);
 }
 
 [data-theme=dark] {
@@ -122,21 +120,20 @@ select {
 /* 
 * Use All (Imports) Files Base To Here
 */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 header {
-  @apply bg-red-100;
+  height: 50vh;
+  background: #ef4444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 
 * Use All (Imports) Files Base To Here
 */
-body {
-  background: var(--clr-background);
-}
-body h1 {
-  color: black;
+[data-theme] {
+  background-color: var(--background-clr);
+  color: var(--clr);
 }
 
 /*# sourceMappingURL=main.css.map */

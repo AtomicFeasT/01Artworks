@@ -1,7 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 header { 
-    @apply bg-red-100;
+    height: 50vh;
+
+    background: rgba(239, 68, 68);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }

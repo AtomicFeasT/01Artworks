@@ -1,11 +1,8 @@
 @use '../scss/base/' as *;
 @use '../scss/components/' as *;
 
-body { 
-    background: var(--clr-background);
-
-    h1 { 
-        color: black;
-    }
+[data-theme] { 
+    background-color: var(--background-clr);
+    color: var(--clr);
 }   
 

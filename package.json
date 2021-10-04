@@ -3,13 +3,9 @@
         "commit": "cz"
     },
     "devDependencies": {
-        "autoprefixer": "^10.3.6",
         "commitizen": "^4.2.4",
         "cz-conventional-changelog": "3.3.0",
-        "postcss": "^8.3.8",
-        "postcss-nested": "^5.0.6",
-        "sass": "^1.42.1",
-        "tailwindcss": "^2.2.16"
+        "sass": "^1.42.1"
     },
     "config": {
         "commitizen": {
@@ -21,5 +17,8 @@
     "main": "index.js",
     "repository": "https://github.com/AtomicFeasT/01-artworks.git",
     "author": "Thiago Lisboa <atomic-feast@hotmail.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "postcss-import": "^14.0.2"
+    }
 }
