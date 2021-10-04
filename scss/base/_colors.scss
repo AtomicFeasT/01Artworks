@@ -3,6 +3,7 @@
     // * Default Color Scheme
     --clr-background: hsl(40, 40%, 85%);
     --clr-header: hsl(40, 40%, 90%);
+    --clr-footer: hsl(0, 0%, 10%);
 
     // * Contrasts
     --clr-contrast-lower: hsl(0, 0%, 90%);
@@ -29,3 +30,8 @@
     --clr-contrast-high: hsl(0, 0%, 90%);
     --clr-contrast-higher: hsl(0, 0%, 100%);
 }
+
+::selection {
+    background-color: var(--clr-contrast-higher);
+    color: var(--clr-contrast-low);
+  }

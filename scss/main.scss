@@ -1,8 +1,17 @@
 @use '../scss/base/' as *;
-@use '../scss/components/' as *;
+@use '../scss/layout/' as *;
 
 [data-theme] { 
     background-color: var(--background-clr);
     color: var(--clr);
 }   
 
+.image-wrapper {
+    // overflow: hidden;
+}
+
+.image-content {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}

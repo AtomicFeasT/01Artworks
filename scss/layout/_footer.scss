@@ -1,0 +1,13 @@
+footer {
+    color: var(--clr-contrast-lower);
+    height: 5vh;
+
+    background: var(--clr-footer);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+
+    margin-top: auto;
+}
