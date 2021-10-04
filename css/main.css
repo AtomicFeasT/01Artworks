@@ -122,8 +122,11 @@ select {
 /* 
 * Use All (Imports) Files Base To Here
 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 header {
-  background: #9900ff;
+  @apply bg-red-100;
 }
 
 /* 
