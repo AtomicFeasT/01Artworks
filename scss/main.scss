@@ -9,11 +9,11 @@
 .section-title {
     letter-spacing: .5rem;
     text-shadow: 
-    0.025em 0.025em 0 hsl(45, 100%, 50%),
-    0.04em 0.04em 0 hsl(40, 100%, 50%),
-    0.06em 0.06em 0 hsl(30, 100%, 50%),
-    0.08em 0.08em 0 hsl(15, 100%, 50%);
-    
+    0.045em 0.045em 0 hsl(45, 100%, 50%),
+    0.065em 0.065em 0 hsl(40, 100%, 50%),
+    0.075em 0.075em 0 hsl(30, 100%, 50%),
+    0.085em 0.085em 0 hsl(15, 100%, 50%);
+
     display: flex;
     justify-content: center;
 
@@ -85,7 +85,7 @@
         box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
     }
 
-    .small-image-content {
+    .regular-image-content {
         width: 270px;
         // height: 270px;
         object-fit: cover;

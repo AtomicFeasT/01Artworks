@@ -172,7 +172,7 @@ p {
 /* 
 * Use All (Imports) Files Base To Here
 */
-main section {
+main .on-paper-regular {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 2fr);
@@ -180,12 +180,12 @@ main section {
   margin: 4rem 1rem;
 }
 @media (min-width: 768px) {
-  main section {
+  main .on-paper-regular {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 2fr);
-    gap: 1.45rem;
-    margin: 4rem 1rem;
+    gap: 1.65rem;
+    margin: 4rem;
   }
 }
 
@@ -226,7 +226,7 @@ footer {
 
 .section-title {
   letter-spacing: 0.5rem;
-  text-shadow: 0.025em 0.025em 0 #ffbf00, 0.04em 0.04em 0 #ffaa00, 0.06em 0.06em 0 #ff8000, 0.08em 0.08em 0 #ff4000;
+  text-shadow: 0.045em 0.045em 0 #ffbf00, 0.065em 0.065em 0 #ffaa00, 0.075em 0.075em 0 #ff8000, 0.085em 0.085em 0 #ff4000;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
@@ -281,7 +281,7 @@ footer {
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
-.image-wrapper .small-image-content {
+.image-wrapper .regular-image-content {
   width: 270px;
   object-fit: cover;
 }

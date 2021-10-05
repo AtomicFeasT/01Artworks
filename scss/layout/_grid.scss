@@ -1,5 +1,5 @@
 main {
-    section { 
+    .on-paper-regular { 
 
         display: grid;
         grid-template-rows: auto;
@@ -12,9 +12,9 @@ main {
             display: grid;
             grid-template-rows: auto;
             grid-template-columns: repeat(4, 2fr);
-            gap: 1.45rem;
+            gap: 1.65rem;
     
-            margin: 4rem 1rem;
+            margin: 4rem;
         }
     }
 }
