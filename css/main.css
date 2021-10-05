@@ -123,6 +123,18 @@ select {
   color: var(--clr-contrast-low);
 }
 
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c2baa3;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--clr-contrast-lower);
+}
+
 :root {
   --ff-dm-serif-display: "DM Serif Display", serif;
   --ff-manuale: "Manuale", serif;
@@ -264,6 +276,9 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: auto;
+}
+footer p {
+  font-size: 0.85rem;
 }
 
 /* 

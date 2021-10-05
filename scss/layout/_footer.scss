@@ -1,5 +1,6 @@
 footer {
     color: var(--clr-contrast-lower);
+
     height: 5vh;
 
     background: var(--clr-footer);
@@ -10,4 +11,8 @@ footer {
     flex-direction: column;
 
     margin-top: auto;
+
+    p {
+        font-size: .85rem;
+    }
 }

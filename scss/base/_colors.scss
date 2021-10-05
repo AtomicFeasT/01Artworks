@@ -4,7 +4,7 @@
     --clr-background: hsl(40, 40%, 85%);
     --clr-header: hsl(40, 40%, 90%);
     --clr-footer: hsl(0, 0%, 10%);
-
+    
     // * Contrasts
     --clr-contrast-lower: hsl(0, 0%, 90%);
     --clr-contrast-low: hsl(240, 0%, 80%);
@@ -19,9 +19,9 @@
 }
 
 [data-theme="dark"] {
-     // * Default Color Scheme
-     --clr-background: hsl(40, 40%, 90%);
-     --clr-header: hsl(40, 40%, 85%);
+    // * Default Color Scheme
+    --clr-background: hsl(40, 40%, 90%);
+    --clr-header: hsl(40, 40%, 85%);
     
     //  *Constrasts
     --clr-contrast-lower: hsl(240, 0%, 10%);
@@ -34,4 +34,14 @@
 ::selection {
     background-color: var(--clr-contrast-higher);
     color: var(--clr-contrast-low);
-  }
+}
+
+::-webkit-scrollbar {
+    width: .7rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsl(45, 20%, 70%);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--clr-contrast-lower);
+}
