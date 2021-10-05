@@ -279,4 +279,21 @@ footer {
   object-fit: cover;
 }
 
+.rounded-frame {
+  border-top-color: #eee;
+  border-left-color: #eee;
+  border-right-color: #eee;
+  border-bottom-color: #eee;
+  border-radius: 100%;
+}
+.rounded-frame::before {
+  border-radius: 100%;
+}
+.rounded-frame::after {
+  border-radius: 100%;
+}
+.rounded-frame .rounded-image {
+  border-radius: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

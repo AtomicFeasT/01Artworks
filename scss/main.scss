@@ -79,3 +79,22 @@
     
 }
 
+.rounded-frame {
+    border-top-color: #eee;
+    border-left-color: #eee;
+    border-right-color: #eee;
+    border-bottom-color: #eee;
+
+    border-radius: 100%;
+
+    &::before {
+        border-radius: 100%;
+    }
+    &::after {
+        border-radius: 100%;
+    }
+
+    .rounded-image {
+        border-radius: 100%;
+    }
+}
