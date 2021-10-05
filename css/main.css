@@ -133,7 +133,7 @@ select {
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-  --fs-h1: clamp(2.35rem, 2.1200rem + 1.1500vw, 3.5rem);
+  --fs-h1: clamp(2.35rem, 1.9500rem + 2.0000vw, 4.35rem);
   --fs-h2: clamp(2.1rem, 1.9450rem + 0.7750vw, 2.875rem);
   --fs-h3: clamp(2rem, 1.9000rem + 0.5000vw, 2.5rem);
   --fs-h4: clamp(1.5rem, 1.3500rem + 0.7500vw, 2.25rem);
@@ -215,20 +215,35 @@ main section {
   gap: 2em;
 }
 
-.image-wrapper {
+.artwork-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  background-color: #ddc;
-  border: solid 5vmin #eee;
+}
+.artwork-wrapper .artwork-title {
+  text-align: center;
+  width: 60%;
+  background-color: #fff;
+  border: solid 7.5px #eee;
   border-radius: 2px;
   border-top-color: #fff;
   border-left-color: #eee;
   border-right-color: #eee;
+  border-bottom-color: #eee;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+
+.image-wrapper {
+  position: relative;
+  border: solid 5vmin #eee;
+  border-radius: 2px;
+  border-top-color: #ddd;
+  border-left-color: #eee;
+  border-right-color: #eee;
   border-bottom-color: #fff;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
   margin-top: 5rem;
 }
 .image-wrapper:before {
@@ -251,10 +266,9 @@ main section {
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
-
-.image-content {
-  width: 300px;
-  height: 300px;
+.image-wrapper .image-content {
+  width: 270px;
+  height: 270px;
   object-fit: cover;
 }
 
