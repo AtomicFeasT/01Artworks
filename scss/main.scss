@@ -6,18 +6,6 @@
     color: var(--clr);
 }   
 
-main {
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 1.5em;
-
-        margin: 0 1.5em;
-    }
-}
-
 .artwork-wrapper {
     display: flex;
     justify-content: center;
@@ -49,7 +37,7 @@ main {
 .image-wrapper {
     position: relative;
     
-    border: solid 5vmin #eee;
+    border: solid 4vmin #eee;
     border-radius: 2px;
     
     border-top-color: #ddd;
@@ -59,8 +47,6 @@ main {
     
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
     
-    margin-top: 5rem;
-    
     &:before {
         content:"";
         position: absolute;
@@ -69,7 +55,7 @@ main {
         right: -2vmin;
         bottom: -2vmin;
         
-        border-radius:2px;
+        border-radius: 2px;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,.25) inset;
     }
 

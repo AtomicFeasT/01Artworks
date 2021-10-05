@@ -172,6 +172,23 @@ p {
 /* 
 * Use All (Imports) Files Base To Here
 */
+main section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1.45rem;
+  margin: 4rem 1rem;
+}
+@media (min-width: 768px) {
+  main section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1.45rem;
+    margin: 4rem 1rem;
+  }
+}
+
 header {
   height: 30vh;
   background: var(--clr-header);
@@ -207,15 +224,6 @@ footer {
   color: var(--clr);
 }
 
-main section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 1.5em;
-  margin: 0 1.5em;
-}
-
 .artwork-wrapper {
   display: flex;
   justify-content: center;
@@ -238,14 +246,13 @@ main section {
 
 .image-wrapper {
   position: relative;
-  border: solid 5vmin #eee;
+  border: solid 4vmin #eee;
   border-radius: 2px;
   border-top-color: #ddd;
   border-left-color: #eee;
   border-right-color: #eee;
   border-bottom-color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-  margin-top: 5rem;
 }
 .image-wrapper:before {
   content: "";
