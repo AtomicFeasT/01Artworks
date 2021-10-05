@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
 
-    margin-top: 2rem;
+    margin-top: 4rem;
 
 }
 
@@ -90,7 +90,18 @@
         // height: 270px;
         object-fit: cover;
     }
+
+    .medium-image-content {
+        width: 300px;
+        // height: 230px;
+        object-fit: cover;
+    }
     
+    .large-image-content {
+        width: 300px;
+        // height: 350px;
+        object-fit: cover;
+    }
 }
 
 .rounded-frame {
