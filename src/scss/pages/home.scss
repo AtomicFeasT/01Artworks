@@ -49,8 +49,10 @@ body {
     width: 100%;
 }
 
-// .hero-wrapper img {
-// }
+.hero-wrapper img {
+    margin-top: -7rem;
+    margin-bottom: -7rem;
+}
 
 .gallery-section {
     // transform: translateY(100%);
@@ -86,7 +88,7 @@ body {
 
     height: 420px;
 
-    margin-top: 30vh;
+    // margin-top: 30vh;
 
     transition: 1.5s;
     transition-timing-function: ease-out;
