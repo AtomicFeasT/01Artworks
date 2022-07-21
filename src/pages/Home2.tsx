@@ -1,10 +1,10 @@
 export function Home2() {
 
-    function showGallery(argument) {
-        let home = document.querySelector('#homeSection')
-        let logoG = document.querySelector('#logoGallery')
-        let gallery = document.querySelector('#gallerySection')
-        let slide = document.querySelector('slide')
+    function showGallery(argument: boolean) {
+        let home = document.querySelector<HTMLDivElement>('#homeSection')!
+        let logoG = document.querySelector<HTMLDivElement>('#logoGallery')!
+        let gallery = document.querySelector<HTMLDivElement>('#gallerySection')!
+        let slide = document.querySelector<HTMLDivElement>('#slide')!
         
         if (argument) {
             home?.classList.add('hideHome')
@@ -43,13 +43,13 @@ export function Home2() {
                     <p className="light-logo"></p>
                     <p className="strong-logo"></p>
                 </div>
-                <div className="arrow-button" onClick={showGallery(true)}>
+                <div className="arrow-button" onClick={() => showGallery(true)}>
                     <a href="#" className="button"></a>
                 </div>
             </section>
             <section className="gallery-section" id="gallerySection">
                 <div id="logoGallery">
-                    <p className="strong-logo" onClick={showGallery(false)}></p>
+                    <p className="strong-logo" onClick={() => showGallery(false)}></p>
                 </div>
                 <div id="slide" className="slide-show">
                     <div className="card">
