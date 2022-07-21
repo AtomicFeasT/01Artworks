@@ -24,7 +24,7 @@ export function Home2() {
         <>
         <nav className="nav-bar">
             <menu>
-                <a href="#" className="button"></a>
+                <a href="#" className="button">☰</a>
             </menu>
             <div className="social-bar">
                 <a href="#" className="facebook button"></a>

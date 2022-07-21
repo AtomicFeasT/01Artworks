@@ -1,0 +1,58 @@
+@use '../../scss/base/' as *;
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.button {
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 60px;
+}
+
+.button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: .5rem;
+}
+
+.social-bar {
+    position: fixed;
+    top: 30px;
+    right: 60px;
+    margin-left: 25px;
+}
+
+.arrow-button {
+    padding: 10px;
+    margin-top: 60px;
+    text-align: center;
+    animation-name: downMotion;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes downMotion {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+#homeSection {
+    transition: all 1s ease;
+    transition-delay: .5s;
+}
