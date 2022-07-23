@@ -28,7 +28,7 @@ export function Home2() {
         }
 
     }
-
+    
     return (
         <>
         <main className="main"> 
@@ -37,7 +37,7 @@ export function Home2() {
                     <img src="../../../public/pexels-medhat-ayad.jpg" alt="" />
                 </div>
 
-                <img src="../../../public/arrow-down-solid.svg" className="arrow-button" onClick={() => showGallery(true)}></img>
+                <img src="../../../public/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => showGallery(true)}></img>
             </section>
 
             <section className="gallery-section" ref={gallery} id="gallerySection">
@@ -45,26 +45,63 @@ export function Home2() {
                     <p className="strong-logo" onClick={() => showGallery(false)}></p>
                 </div>
                 <div id="slide" className="slide-show">
+                    <div className="image-wrapper">
+                        <img src="../../../public/assets/regular/anxious.jpg" alt="" />
+                    </div>
+
+                    <div className="image-wrapper">
+                        <img src="../../../public/assets/regular/cheese-top-hat.jpg" alt="" />
+                    </div>
+
+                    <div className="image-wrapper">
+                        <img src="../../../public/assets/regular/fire-flex.jpg" alt="" />
+                    </div>
+
+                    <div className="image-wrapper">
+                        <img src="../../../public/assets/regular/hasegui.jpg" alt="" />
+                    </div>
+
+                    <div className="image-wrapper">
+                        <img src="../../../public/assets/regular/pizza.jpg" alt="" />
+                    </div>
+
+
+
+                </div>
+
+                <div className="buttons">
+                    <button><img className="button-left" src="../../../public/circle-arrow-left-solid.svg" alt="" /></button>
+                    <button><img className="button-right" src="../../../public/circle-arrow-right-solid.svg" alt="" /></button>
+                </div>
+
+            </section>
+        
+            {/* <section className="gallery-section" ref={gallery} id="gallerySection">
+                <div id="logoGallery">
+                    <p className="strong-logo" onClick={() => showGallery(false)}></p>
+                </div>    
+                <div id="slide" className="slide-show">
                     <div className="card">
                         <img src="../../../public/assets/regular/angel.jpg" alt="" />
-                    </div>
+                    </div>    
                     <div className="card">
-                        <img src="#" alt="" />
-                    </div>
+                        <img src="../../../public/assets/regular/anxious.jpg" alt="" />
+                    </div>    
                     <div className="card">
-                        <img src="#" alt="" />
-                    </div>
+                        <img src="../../../public/assets/regular/cheese-top-hat.jpg" alt="" />
+                    </div>    
                     <div className="card">
-                        <img src="#" alt="" />
-                    </div>
+                        <img src="../../../public/assets/regular/fire-flex.jpg" alt="" />
+                    </div>    
                     <div className="card">
-                        <img src="#" alt="" />
-                    </div>
+                        <img src="../../../public/assets/regular/hasegui.jpg" alt="" />
+                    </div>            
                     <div className="card">
-                        <img src="#" alt="" />
+                        <img src="../../../public/assets/regular/pizza.jpg" alt="" />
                     </div>
                 </div>
-            </section>
+            </section> */}
+
         </main>
         </>
     )

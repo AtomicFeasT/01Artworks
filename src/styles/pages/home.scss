@@ -1,4 +1,4 @@
-@use '../../scss/base/' as *;
+@use '../../styles/base/' as *;
 
 .main {
     width: 100%;
@@ -7,7 +7,7 @@
 }
 
 body {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .arrow-button {
@@ -85,10 +85,12 @@ body {
 
 .slide-show {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
     height: 420px;
-
-    // margin-top: 30vh;
 
     transition: 1.5s;
     transition-timing-function: ease-out;
@@ -122,7 +124,75 @@ body {
     margin-top: 0;
 }
 
+.image-wrapper {
+    width: fit-content;
+    height: fit-content;
+    
+    position: relative;
+    
+    border: solid 4vmin #eee;
+    border-radius: 2px;
+    
+    border-top-color: #ddd;
+    border-left-color: #eee;
+    border-right-color: #eee;
+    border-bottom-color: #fff;
+    
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    
+    &:before {
+        content:"";
+        position: absolute;
+        top: -2vmin;
+        left: -2vmin;
+        right: -2vmin;
+        bottom: -2vmin;
+        
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25) inset;
+    }
+    
+    &:after {
+        content:"";
+        position: absolute;
+        top: -2.5vmin;
+        left: -2.5vmin;
+        right: -2.5vmin;
+        bottom: -2.5vmin;
+        
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    }
+    
+    .regular-image-content {
+        width: 270px;
+        // height: 270px;
+        object-fit: cover;
+    }
+    
+    .medium-image-content {
+        width: 300px;
+        // height: 230px;
+        object-fit: cover;
+    }
+    
+    .large-image-content {
+        width: 300px;
+        // height: 350px;
+        object-fit: cover;
+    }
+}
+
+
+
 .buttons {
     width: 10%;
     text-align: center;
+    margin: 0 auto;
+}
+
+.button-left,
+.button-right {
+    width: 3rem;
+    height: 3rem;
 }
