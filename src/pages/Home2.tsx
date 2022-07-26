@@ -3,7 +3,6 @@ import '../styles/pages/home.scss'
 
 type SectionProps = HTMLAttributes<HTMLElement>&{children: ReactNode, show: boolean, hideClass: string}
 
-
 const Section: FunctionComponent<SectionProps> = ({ 
     children,
     hideClass,
@@ -26,8 +25,13 @@ export function Home2() {
         <main className="main"> 
             <Section className="main-section" show={showClass} hideClass='hideHome'>
                 <div className={`hero-wrapper ${showClass? 'hideHero': ''}`} id="hero">
-                    <img src="../../../public/pexels-medhat-ayad.jpg" alt="" />
+                    {/* <img src="../../../public/pexels-medhat-ayad.jpg" alt="" /> */}
+                    
+                    <div className="modern-frame">
+                        <img src="../../../public/assets/ib/fabricated-world.png" alt="" />
+                    </div>
                 </div>
+
                 <div className="arrow-wrapper">
                     <img src="../../../public/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => setShowClass(true)}></img>
                 </div>
@@ -43,24 +47,21 @@ export function Home2() {
                         <img src="../../../public/assets/regular/anxious.jpg" alt="" />
                     </div>
 
-                    <div className="image-wrapper">
+                    <div className="modern-frame">
                         <img src="../../../public/assets/regular/cheese-top-hat.jpg" alt="" />
                     </div>
 
-                    <div className="image-wrapper">
+                    <div className="modern-frame">
                         <img src="../../../public/assets/regular/fire-flex.jpg" alt="" />
                     </div>
 
-                    <div className="image-wrapper">
+                    <div className="modern-frame">
                         <img src="../../../public/assets/regular/hasegui.jpg" alt="" />
                     </div>
 
-                    <div className="image-wrapper">
+                    <div className="modern-frame">
                         <img src="../../../public/assets/regular/pizza.jpg" alt="" />
                     </div>
-
-
-
                 </div>
 
                 <div className="buttons">
