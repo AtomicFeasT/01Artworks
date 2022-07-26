@@ -25,8 +25,6 @@ export function Home2() {
         <main className="main"> 
             <Section className="main-section" show={showClass} hideClass='hideHome'>
                 <div className={`hero-wrapper ${showClass? 'hideHero': ''}`} id="hero">
-                    {/* <img src="../../../public/pexels-medhat-ayad.jpg" alt="" /> */}
-                    
                     <div className="modern-frame">
                         <img src="../../../public/assets/ib/fabricated-world.png" alt="" />
                     </div>
