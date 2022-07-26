@@ -1,0 +1,9 @@
+.modern-frame {
+    width: fit-content;
+    height: fit-content;
+    background-color: hsl(200, 4%, 86%);
+    padding: 2rem;
+    border: 5px solid #191917;
+    filter: drop-shadow();
+    box-shadow: inset 0px 0px 10px 5px hsl(60, 4%, 9%, 0.2);
+}

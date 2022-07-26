@@ -1,51 +1,45 @@
-import { useRef } from "react"
+import { FunctionComponent, HTMLAttributes, ReactNode, useState } from "react"
+import '../styles/pages/home.scss'
+
+type SectionProps = HTMLAttributes<HTMLElement>&{children: ReactNode, show: boolean, hideClass: string}
+
+
+const Section: FunctionComponent<SectionProps> = ({ 
+    children,
+    hideClass,
+    show,
+    className,
+    ...rest
+}) => {
+    return (
+        <section className={`${className} ${show? hideClass: ''}`} {...rest}>
+            {children}
+        </section>
+    )
+}
+
 export function Home2() {
-    const home = useRef<HTMLDivElement>(null)
-    const hero = useRef<HTMLDivElement>(null)
-    const logoG = useRef<HTMLDivElement>(null)
-    const gallery = useRef<HTMLDivElement>(null)
-    const slide = useRef<HTMLDivElement>(null)
+    const [showClass, setShowClass] = useState(false)
 
-    function showGallery(argument: boolean) {
-        // let home = document.querySelector<HTMLDivElement>('#homeSection')!
-        // let hero = document.querySelector<HTMLDivElement>('#hero')!
-        // let logoG = document.querySelector<HTMLDivElement>('#logoGallery')!
-        // let gallery = document.querySelector<HTMLDivElement>('#gallerySection')!
-        // let slide = document.querySelector<HTMLDivElement>('#slide')!
-        
-        if (argument) {
-            home.current?.classList.add('hideHome')
-            hero.current?.classList.add('hideHero')
-            logoG.current?.classList.add('logoGalleryShow')
-            gallery.current?.classList.add('showGallery')
-            slide.current?.classList.add('showSlide')
-        } else {
-            home.current?.classList.remove('hideHome')
-            hero.current?.classList.remove('hideHero')
-            logoG.current?.classList.remove('logoGalleryShow')
-            gallery.current?.classList.remove('showGallery')
-            slide.current?.classList.remove('showSlide')
-        }
-
-    }
-    
     return (
         <>
         <main className="main"> 
-            <section className="main-section" ref={home} id="homeSection">
-                <div className="hero-wrapper" ref={hero} id="hero">
+            <Section className="main-section" show={showClass} hideClass='hideHome'>
+                <div className={`hero-wrapper ${showClass? 'hideHero': ''}`} id="hero">
                     <img src="../../../public/pexels-medhat-ayad.jpg" alt="" />
                 </div>
-
-                <img src="../../../public/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => showGallery(true)}></img>
-            </section>
-
-            <section className="gallery-section" ref={gallery} id="gallerySection">
-                <div id="logoGallery">
-                    <p className="strong-logo" onClick={() => showGallery(false)}></p>
+                <div className="arrow-wrapper">
+                    <img src="../../../public/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => setShowClass(true)}></img>
                 </div>
+            </Section>
+
+            <section className={`gallery-section ${showClass? 'showGallery': ''}`} id="gallerySection">
+                <div id="logoGallery">
+                    <p className="strong-logo" onClick={() => setShowClass(false)}></p>
+                </div>
+
                 <div id="slide" className="slide-show">
-                    <div className="image-wrapper">
+                    <div className="modern-frame">
                         <img src="../../../public/assets/regular/anxious.jpg" alt="" />
                     </div>
 

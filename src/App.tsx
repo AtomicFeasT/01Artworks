@@ -1,4 +1,3 @@
-import '../src/styles/pages/home.scss'
 import { Home2 } from '../src/pages/Home2'
 
 function App() {
