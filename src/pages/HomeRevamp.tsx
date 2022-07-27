@@ -1,10 +1,10 @@
 import { FunctionComponent, HTMLAttributes, ReactNode, useState } from "react"
 
 // Production SCSS
-// import '../styles/pages/home.scss'
+import '../styles/pages/home.scss'
 
 // Autoprefixed CSS
-import '../../public/css/styles.min.css'
+// import './css/styles.min.css'
 
 type SectionProps = HTMLAttributes<HTMLElement>&{children: ReactNode, show: boolean, hideClass: string}
 
@@ -31,15 +31,15 @@ export function HomeRevamp() {
             <Section className="main-section" show={showClass} hideClass='hideHome'>
                 <div className={`hero-wrapper ${showClass? 'hideHero': ''}`} id="hero">
                     <div className="modern-frame">
-                        <img src="../../../public/assets/ib/fabricated-world.png" alt="" />
+                        <img src="./assets/ib/fabricated-world.png" alt="" />
                     </div>
                     <div className="modern-frame">
-                        <img src="../../../public/assets/ib/fabricated-world.png" alt="" />
+                        <img src="./assets/ib/fabricated-world.png" alt="" />
                     </div>
                 </div>
 
                 <div className="arrow-wrapper">
-                    <img src="../../../public/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => setShowClass(true)}></img>
+                    <img src="./assets/arrows/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => setShowClass(true)}></img>
                 </div>
             </Section>
 
@@ -50,29 +50,29 @@ export function HomeRevamp() {
 
                 <div id="slide" className="slide-show">
                     <div className="modern-frame">
-                        <img src="../../../public/assets/regular/anxious.jpg" alt="" />
+                        <img src="./assets/regular/anxious.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="../../../public/assets/regular/cheese-top-hat.jpg" alt="" />
+                        <img src="./assets/regular/cheese-top-hat.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="../../../public/assets/regular/fire-flex.jpg" alt="" />
+                        <img src="./assets/regular/fire-flex.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="../../../public/assets/regular/hasegui.jpg" alt="" />
+                        <img src="./assets/regular/hasegui.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="../../../public/assets/regular/pizza.jpg" alt="" />
+                        <img src="./assets/regular/pizza.jpg" alt="" />
                     </div>
                 </div>
 
                 <div className="buttons">
-                    <button><img className="button-left" src="../../../public/circle-arrow-left-solid.svg" alt="" /></button>
-                    <button><img className="button-right" src="../../../public/circle-arrow-right-solid.svg" alt="" /></button>
+                    <button><img className="button-left" src="./assets/arrows/circle-arrow-left-solid.svg" alt="" /></button>
+                    <button><img className="button-right" src="./assets/arrows/circle-arrow-right-solid.svg" alt="" /></button>
                 </div>
 
             </section>
