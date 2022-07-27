@@ -22,7 +22,7 @@ const Section: FunctionComponent<SectionProps> = ({
     )
 }
 
-export function Home2() {
+export function HomeRevamp() {
     const [showClass, setShowClass] = useState(false)
 
     return (
