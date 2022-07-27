@@ -1,125 +1,123 @@
-@use '../styles/base/' as *;
-@use '../styles/layout/' as *;
+@use "../styles/base/" as *;
+@use "../styles/layout/" as *;
 
-[data-theme] { 
-    background-color: var(--background-clr);
-    color: var(--clr);
-}   
+[data-theme] {
+  color: var(--clr);
+  background-color: var(--background-clr);
+}
 
 .section-title {
-    letter-spacing: .5rem;
-    text-shadow: 
+  letter-spacing: 0.5rem;
+  text-shadow:
     0.045em 0.045em 0 hsl(45, 100%, 50%),
     0.065em 0.065em 0 hsl(40, 100%, 50%),
     0.075em 0.075em 0 hsl(30, 100%, 50%),
     0.085em 0.085em 0 hsl(15, 100%, 50%);
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    margin-top: 4rem;
-
+  margin-top: 4rem;
 }
 
 .artwork-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .artwork-title {
-        text-align: center;
+  .artwork-title {
+    text-align: center;
 
-        width: 70%;
+    width: 70%;
 
-        background-color: #fff;
-    
-        border: solid 7.5px #eee;
-        border-radius: 2px;
-        
-        border-top-color: #fff;
-        border-left-color: #eee;
-        border-right-color: #eee;
-        border-bottom-color: #eee;
-        
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    background-color: hsl(0, 0%, 100%);
 
-        margin-top: 1rem;
-    }
+    margin-top: 1rem;
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%);
+
+    border: solid 7.5px hsl(0, 0%, 93%);
+    border-radius: 2px;
+
+    border-top-color: hsl(0, 0%, 100%);
+    border-left-color: hsl(0, 0%, 93%);
+    border-right-color: hsl(0, 0%, 93%);
+    border-bottom-color: hsl(0, 0%, 93%);
+  }
 }
 
-
 .image-wrapper {
-    position: relative;
-    
-    border: solid 4vmin #eee;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%);
+
+  border: solid 4vmin hsl(0, 0%, 93%);
+  border-radius: 2px;
+  position: relative;
+
+  border-top-color: hsl(0, 0%, 87%);
+  border-left-color: hsl(0, 0%, 93%);
+  border-right-color: hsl(0, 0%, 93%);
+  border-bottom-color: hsl(0, 0%, 100%);
+
+  &::before {
+    content: "";
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%) inset;
+
     border-radius: 2px;
-    
-    border-top-color: #ddd;
-    border-left-color: #eee;
-    border-right-color: #eee;
-    border-bottom-color: #fff;
-    
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-    
-    &:before {
-        content:"";
-        position: absolute;
-        top: -2vmin;
-        left: -2vmin;
-        right: -2vmin;
-        bottom: -2vmin;
-        
-        border-radius: 2px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25) inset;
-    }
+    position: absolute;
+    top: -2vmin;
+    bottom: -2vmin;
+    left: -2vmin;
+    right: -2vmin;
+  }
 
-    &:after {
-        content:"";
-        position: absolute;
-        top: -2.5vmin;
-        left: -2.5vmin;
-        right: -2.5vmin;
-        bottom: -2.5vmin;
-        
-        border-radius: 2px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-    }
+  &::after {
+    content: "";
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%);
 
-    .regular-image-content {
-        width: 270px;
-        // height: 270px;
-        object-fit: cover;
-    }
+    border-radius: 2px;
+    position: absolute;
+    top: -2.5vmin;
+    bottom: -2.5vmin;
+    left: -2.5vmin;
+    right: -2.5vmin;
+  }
 
-    .medium-image-content {
-        width: 300px;
-        // height: 230px;
-        object-fit: cover;
-    }
-    
-    .large-image-content {
-        width: 300px;
-        // height: 350px;
-        object-fit: cover;
-    }
+  .regular-image-content {
+    width: 270px;
+    // height: 270px;
+    object-fit: cover;
+  }
+
+  .medium-image-content {
+    width: 300px;
+    // height: 230px;
+    object-fit: cover;
+  }
+
+  .large-image-content {
+    width: 300px;
+    // height: 350px;
+    object-fit: cover;
+  }
 }
 
 .rounded-frame {
-    border-top-color: #eee;
-    border-left-color: #eee;
-    border-right-color: #eee;
-    border-bottom-color: #eee;
+  border-top-color: hsl(0, 0%, 93%);
+  border-left-color: hsl(0, 0%, 93%);
+  border-right-color: hsl(0, 0%, 93%);
+  border-bottom-color: hsl(0, 0%, 93%);
 
+  border-radius: 100%;
+
+  &::before {
     border-radius: 100%;
+  }
 
-    &::before {
-        border-radius: 100%;
-    }
-    &::after {
-        border-radius: 100%;
-    }
+  &::after {
+    border-radius: 100%;
+  }
 
-    .rounded-image {
-        border-radius: 100%;
-    }
+  .rounded-image {
+    border-radius: 100%;
+  }
 }

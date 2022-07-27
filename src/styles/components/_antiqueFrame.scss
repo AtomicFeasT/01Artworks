@@ -1,40 +1,40 @@
 .antique-frame {
-    width: fit-content;
-    height: fit-content;
-    
-    position: relative;
-    
-    border: solid 4vmin #eee;
+  width: fit-content;
+  height: fit-content;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%);
+
+  border: solid 4vmin hsl(0, 0%, 93%);
+  border-radius: 2px;
+
+  position: relative;
+
+  border-top-color: hsl(0, 0%, 87%);
+  border-left-color: hsl(0, 0%, 93%);
+  border-right-color: hsl(0, 0%, 93%);
+  border-bottom-color: hsl(0, 0%, 100%);
+
+  &::before {
+    content: "";
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%) inset;
+
     border-radius: 2px;
-    
-    border-top-color: #ddd;
-    border-left-color: #eee;
-    border-right-color: #eee;
-    border-bottom-color: #fff;
-    
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-    
-    &:before {
-        content:"";
-        position: absolute;
-        top: -2vmin;
-        left: -2vmin;
-        right: -2vmin;
-        bottom: -2vmin;
-        
-        border-radius: 2px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25) inset;
-    }
-    
-    &:after {
-        content:"";
-        position: absolute;
-        top: -2.5vmin;
-        left: -2.5vmin;
-        right: -2.5vmin;
-        bottom: -2.5vmin;
-        
-        border-radius: 2px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-    }
+    position: absolute;
+    top: -2vmin;
+    bottom: -2vmin;
+    left: -2vmin;
+    right: -2vmin;
+  }
+
+  &::after {
+    content: "";
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 25%);
+
+    border-radius: 2px;
+    position: absolute;
+    top: -2.5vmin;
+    bottom: -2.5vmin;
+    left: -2.5vmin;
+    right: -2.5vmin;
+  }
 }
