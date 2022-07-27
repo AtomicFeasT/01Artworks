@@ -1,5 +1,10 @@
 import { FunctionComponent, HTMLAttributes, ReactNode, useState } from "react"
-import '../styles/pages/home.scss'
+
+// Production SCSS
+// import '../styles/pages/home.scss'
+
+// Autoprefixed CSS
+import '../../public/css/styles.min.css'
 
 type SectionProps = HTMLAttributes<HTMLElement>&{children: ReactNode, show: boolean, hideClass: string}
 
