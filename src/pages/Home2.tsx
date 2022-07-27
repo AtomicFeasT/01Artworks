@@ -28,6 +28,9 @@ export function Home2() {
                     <div className="modern-frame">
                         <img src="../../../public/assets/ib/fabricated-world.png" alt="" />
                     </div>
+                    <div className="modern-frame">
+                        <img src="../../../public/assets/ib/fabricated-world.png" alt="" />
+                    </div>
                 </div>
 
                 <div className="arrow-wrapper">
