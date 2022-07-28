@@ -30,11 +30,17 @@ export function HomeRevamp() {
         <main className="main"> 
             <Section className="main-section" show={showClass} hideClass='hideHome'>
                 <div className={`hero-wrapper ${showClass? 'hideHero': ''}`} id="hero">
-                    <div className="modern-frame">
-                        <img src="./assets/ib/fabricated-world.png" alt="" />
-                    </div>
-                    <div className="modern-frame">
-                        <img src="./assets/ib/fabricated-world.png" alt="" />
+                    
+                    <div className="frame-wrapper">
+                        <div className="fw-400 modern-frame span-two-columns">
+                            <img src="./assets/ib/fabricated-world.png" alt="" />
+                        </div>
+                        <div className="ld-red-180 modern-frame">
+                            <img src="./assets/ib/lady-in-red-modified.png" alt="" />
+                        </div>
+                        <div className="pfr-180 modern-frame">
+                            <img src="./assets/ib/promise-of-reunion.png" alt="" />
+                        </div>
                     </div>
                 </div>
 
@@ -50,23 +56,23 @@ export function HomeRevamp() {
 
                 <div id="slide" className="slide-show">
                     <div className="modern-frame">
-                        <img src="./assets/regular/anxious.jpg" alt="" />
+                        <img className="frame-image" src="./assets/regular/anxious.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="./assets/regular/cheese-top-hat.jpg" alt="" />
+                        <img className="frame-image" src="./assets/regular/cheese-top-hat.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="./assets/regular/fire-flex.jpg" alt="" />
+                        <img className="frame-image" src="./assets/regular/fire-flex.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="./assets/regular/hasegui.jpg" alt="" />
+                        <img className="frame-image" src="./assets/regular/hasegui.jpg" alt="" />
                     </div>
 
                     <div className="modern-frame">
-                        <img src="./assets/regular/pizza.jpg" alt="" />
+                        <img className="frame-image" src="./assets/regular/pizza.jpg" alt="" />
                     </div>
                 </div>
 
@@ -77,32 +83,6 @@ export function HomeRevamp() {
 
             </section>
         
-            {/* <section className="gallery-section" ref={gallery} id="gallerySection">
-                <div id="logoGallery">
-                    <p className="strong-logo" onClick={() => showGallery(false)}></p>
-                </div>    
-                <div id="slide" className="slide-show">
-                    <div className="card">
-                        <img src="../../../public/assets/regular/angel.jpg" alt="" />
-                    </div>    
-                    <div className="card">
-                        <img src="../../../public/assets/regular/anxious.jpg" alt="" />
-                    </div>    
-                    <div className="card">
-                        <img src="../../../public/assets/regular/cheese-top-hat.jpg" alt="" />
-                    </div>    
-                    <div className="card">
-                        <img src="../../../public/assets/regular/fire-flex.jpg" alt="" />
-                    </div>    
-                    <div className="card">
-                        <img src="../../../public/assets/regular/hasegui.jpg" alt="" />
-                    </div>            
-                    <div className="card">
-                        <img src="../../../public/assets/regular/pizza.jpg" alt="" />
-                    </div>
-                </div>
-            </section> */}
-
         </main>
         </>
     )

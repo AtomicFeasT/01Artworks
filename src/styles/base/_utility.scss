@@ -1,0 +1,18 @@
+.span-two-columns {
+  grid-column: 1 / 3;
+  margin: 0 auto;
+}
+
+.fw-400 {
+  img {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.ld-red-180,
+.pfr-180 {
+  img {
+    width: 180px !important;
+  }
+}

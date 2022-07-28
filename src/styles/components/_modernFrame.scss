@@ -1,8 +1,26 @@
 .modern-frame {
-    width: fit-content;
-    height: fit-content;
-    background-color: hsl(200, 4%, 86%);
-    padding: 2rem;
-    border: 5px solid #191917;
-    box-shadow: inset 0px 0px 10px 5px hsl(60, 4%, 9%, 0.2);
+  width: fit-content;
+  height: fit-content;
+
+  display: inline-block;
+  overflow: hidden;
+
+  background-color: hsl(200, 4%, 86%);
+  padding: 2rem;
+
+  box-shadow: inset 0 0 10px 5px hsl(60, 4%, 9%, 20%);
+  border: 5px solid hsl(60, 4%, 9%);
+
+  transition: 0.5s;
+
+  .frame-image {
+    width: 100%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+
+  .frame-image:hover,
+  .frame-image:focus-within {
+    transform: scale(1.35);
+  }
 }
