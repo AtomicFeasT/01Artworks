@@ -37,7 +37,6 @@ module.exports = {
       'order/order': ['custom-properties', 'declarations'],
       'at-rule-no-unknown': null,
       'order/properties-order': [
-        'content',
         'list-type',
         'font',
         'font-size',
@@ -112,6 +111,7 @@ module.exports = {
         'border-bottom-right-radius',
         'border-bottom-left-radius',
         'cursor',
+        'content',
         'position',
         'top',
         'bottom',
