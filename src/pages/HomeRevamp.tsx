@@ -17,7 +17,7 @@ const Section: FunctionComponent<SectionProps> = ({
     ...rest
 }) => {
     return (
-        <section className={`${className} ${show? hideClass: ''}`} {...rest}>
+        <section className={`${className} ${show ? hideClass : ''}`} {...rest}>
             {children}
         </section>
     )
@@ -58,13 +58,10 @@ export function HomeRevamp() {
             </Section>
 
             <section className={`gallery-section ${showClass ? 'showGallery': ''}`} id="gallerySection">
-                <div id="logoGallery">
-                    <p className="strong-logo" onClick={() => setShowClass(false)}></p>
-                </div>
 
                 <div className="slides-wrapper carousel">
 
-                    <div className="slide-show-wrapper">
+                    <div className={`slide-show-wrapper ${showClass ? 'showSlides': ''}`}>
                         <div data-active className="slide-show first-slide">
                             <div className="modern-frame">
                                 <img className="frame-image" src="./assets/regular/anxious.jpg" alt="" />
