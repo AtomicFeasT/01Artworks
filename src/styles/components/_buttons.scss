@@ -1,0 +1,120 @@
+// South Button
+.south-button {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.down-arrow {
+  cursor: pointer;
+
+  animation-name: downMotion;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation: none;
+  }
+}
+
+// West And East Buttons
+.west-east-buttons {
+  text-align: center;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: all 250ms ease;
+  position: relative;
+
+  :hover {
+    filter: brightness(120%);
+  }
+
+  :hover.arrow {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+
+  :active.arrow {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(7, 38%, 38%);
+
+    padding: 1rem;
+    border-radius: 50%;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(0.3, 0.7, 0.4, 1);
+
+    img {
+      width: 2rem;
+    }
+  }
+}
+
+.shadow,
+.edge {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 0;
+}
+
+.shadow {
+  background: hsl(0 0% 0% / 25%);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  background:
+    linear-gradient(
+      to left,
+      hsl(51 50% 50%) 0%,
+      hsl(51 50% 70%) 8%,
+      hsl(51 50% 80%) 92%,
+      hsl(51 50% 50%) 100%
+    );
+}
+
+// hsl(51, 3%, 46%)
+
+.button-left,
+.button-right {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}

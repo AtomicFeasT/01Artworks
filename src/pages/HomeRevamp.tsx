@@ -63,8 +63,11 @@ export function HomeRevamp() {
                     </div>
                 </div>
 
-                <div className="arrow-wrapper">
-                    <img src="./assets/arrows/circle-arrow-down-solid.svg" className="arrow-button" onClick={() => setShowClass(true)}></img>
+                <div className="south-button classic-buttons">
+                    <button className="down-arrow" onClick={() => setShowClass(true)}>
+                        <span className="edge"></span>
+                        <span className="arrow"><img src="./assets/arrows/arrow-fat-down-fill.svg"/></span>
+                    </button>                
                 </div>
             </Section>
 
@@ -120,16 +123,22 @@ export function HomeRevamp() {
                         </div>
                     </div>
              
-                    <div className="buttons">
-                        <button onClick={(event) => Buttons(event.currentTarget)} data-carousel-button="prev"><img className="button-left prev" src="./assets/arrows/circle-arrow-left-solid.svg" alt="" /></button>
-                        <button onClick={(event) => Buttons(event.currentTarget)} data-carousel-button="next"><img className="button-right next" src="./assets/arrows/circle-arrow-right-solid.svg" alt="" /></button>
+                    <div className="west-east-buttons classic-buttons">
+                        <button onClick={(event) => Buttons(event.currentTarget)} data-carousel-button="prev">
+                            <span className="edge"></span>
+                            <span className="left-arrow arrow"><img src="./assets/arrows/arrow-fat-left-fill.svg" alt="" /></span>
+                        </button>
+
+                        <button onClick={(event) => Buttons(event.currentTarget)} data-carousel-button="next">
+                            <span className="edge"></span>
+                            <span className="right-arrow arrow"><img src="./assets/arrows/arrow-fat-right-fill.svg" alt="" /></span>
+                        </button>
                     </div>
                 </div>
               
-
-
             </section>
-        
+        {/* <img className="button-left prev" src="./assets/arrows/circle-arrow-left-solid.svg" alt="" /> */}
+        {/* <img className="button-right next" src="./assets/arrows/circle-arrow-right-solid.svg" alt="" /> */}
         </main>
         </>
     )
