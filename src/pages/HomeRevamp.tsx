@@ -76,46 +76,46 @@ export function HomeRevamp() {
 
                         <div data-active className="slide-show first-slide">
                             <div className="modern-frame">
+                                <img className="frame-image" src="./assets/regular/pizza.jpg" alt="" />
+                            </div>
+
+                            <div className="modern-frame">
+                                <img className="frame-image" src="./assets/regular/angel.jpg" alt="" />
+                            </div>
+
+                            <div className="modern-frame">
                                 <img className="frame-image" src="./assets/regular/anxious.jpg" alt="" />
                             </div>
 
                             <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/cheese-top-hat.jpg" alt="" />
+                                <img className="frame-image" src="./assets/regular/cute-cheesy-hair.jpg" alt="" />
                             </div>
 
                             <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/fire-flex.jpg" alt="" />
-                            </div>
-
-                            <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/hasegui.jpg" alt="" />
-                            </div>
-
-                            <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/pizza.jpg" alt="" />
+                                <img className="frame-image" src="./assets/regular/female-yasuo.jpg" alt="" />
                             </div>
                         </div>
 
                         <div className="slide-show second-slide">
 
                             <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/anxious.jpg" alt="" />
-                            </div>
-
-                            <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/cheese-top-hat.jpg" alt="" />
-                            </div>
-
-                            <div className="modern-frame">
                                 <img className="frame-image" src="./assets/regular/fire-flex.jpg" alt="" />
                             </div>
 
                             <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/hasegui.jpg" alt="" />
+                                <img className="frame-image" src="./assets/regular/yasuo-flute.jpg" alt="" />
                             </div>
 
                             <div className="modern-frame">
-                                <img className="frame-image" src="./assets/regular/pizza.jpg" alt="" />
+                                <img className="frame-image" src="./assets/regular/tired-but-firm.jpg" alt="" />
+                            </div>
+
+                            <div className="modern-frame">
+                                <img className="frame-image" src="./assets/regular/xayah-chibi.jpg" alt="" />
+                            </div>
+
+                            <div className="modern-frame">
+                                <img className="frame-image" src="./assets/regular/gary.jpg" alt="" />
                             </div>
                         </div>
                     </div>
