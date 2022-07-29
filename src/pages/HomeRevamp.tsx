@@ -51,13 +51,13 @@ export function HomeRevamp() {
                 <div className={`hero-wrapper ${showClass ? 'hideHero': ''}`}>
                     
                     <div className="frame-wrapper">
-                        <div className="fw-400 modern-frame span-two-columns">
+                        <div className="fw-550 modern-frame span-two-columns">
                             <img src="./assets/ib/fabricated-world.png" alt="" />
                         </div>
-                        <div className="ld-red-180 modern-frame">
+                        <div className="ld-red-200 modern-frame">
                             <img src="./assets/ib/lady-in-red-modified.png" alt="" />
                         </div>
-                        <div className="pfr-180 modern-frame">
+                        <div className="pfr-200 modern-frame">
                             <img src="./assets/ib/promise-of-reunion.png" alt="" />
                         </div>
                     </div>

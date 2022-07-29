@@ -3,16 +3,24 @@
   margin: 0 auto;
 }
 
-.fw-400 {
+.fw-550 {
   img {
-    width: 450px;
+    width: 550px;
     margin: 0 auto;
   }
 }
 
-.ld-red-180,
-.pfr-180 {
+.ld-red-200,
+.pfr-200 {
   img {
-    width: 180px !important;
+    width: 225px !important;
   }
+}
+
+.pfr-200 {
+  margin-left: auto;
+}
+
+.ld-red-200 {
+  margin-right: auto;
 }
