@@ -25,25 +25,24 @@ const Section: FunctionComponent<SectionProps> = ({
 
 // Carousel Logic
 const buttons = document.querySelectorAll('[data-carousel-button]')
-const button = document.querySelector('button')
-
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const offset = button.dataset.carouselButton === "next" ? 1 : -1
-        const slides = button.closest('[data-carousel]').querySelector('[data-slides]')
-
-        const activeSlide = slides?.querySelector('[data-active]')
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-        if (newIndex < 0) newIndex = slides?.children.length - 1
-        if (newIndex >= slides.children.length) newIndex = 0
-
-        slides.children[newIndex].dataset.active = true
-        delete activeSlide.dataset.active
-    })
-}
 
 export function HomeRevamp() {
     const [showClass, setShowClass] = useState(false)
+
+    function Buttons(button: HTMLButtonElement) {
+        const offset = button.dataset.carouselButton === "next" ? 1 : -1
+        const slides = button.closest('[data-carousel]')!.querySelector<HTMLElement>('[data-slides]')!
+    
+        const activeSlide = slides.querySelector('[data-active]')!
+        let newIndex = [...slides.children].indexOf(activeSlide) + offset
+        if (newIndex < 0) newIndex = slides?.children.length - 1
+        if (newIndex >= slides.children.length) newIndex = 0
+    
+        // @ts-ignore
+        slides.children[newIndex].dataset.active = true
+        // @ts-ignore
+        delete activeSlide.dataset.active
+    }
 
     return (
         <>
@@ -122,8 +121,8 @@ export function HomeRevamp() {
                     </div>
              
                     <div className="buttons">
-                        <button data-carousel-button="prev"><img className="button-left prev" src="./assets/arrows/circle-arrow-left-solid.svg" alt="" /></button>
-                        <button data-carousel-button="next"><img className="button-right next" src="./assets/arrows/circle-arrow-right-solid.svg" alt="" /></button>
+                        <button onClick={(event) => Buttons(event.currentTarget)} data-carousel-button="prev"><img className="button-left prev" src="./assets/arrows/circle-arrow-left-solid.svg" alt="" /></button>
+                        <button onClick={(event) => Buttons(event.currentTarget)} data-carousel-button="next"><img className="button-right next" src="./assets/arrows/circle-arrow-right-solid.svg" alt="" /></button>
                     </div>
                 </div>
               
